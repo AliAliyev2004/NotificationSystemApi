@@ -1,0 +1,17 @@
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\bin\Debug\net8.0\NotificationApplication.deps.json
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\bin\Debug\net8.0\NotificationApplication.dll
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\bin\Debug\net8.0\NotificationApplication.pdb
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\bin\Debug\net8.0\NotificationDomain.dll
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\bin\Debug\net8.0\NotificationInfrastructure.dll
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\bin\Debug\net8.0\NotificationDomain.pdb
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\bin\Debug\net8.0\NotificationInfrastructure.pdb
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\obj\Debug\net8.0\NotificationApplication.csproj.AssemblyReference.cache
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\obj\Debug\net8.0\NotificationApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\obj\Debug\net8.0\NotificationApplication.AssemblyInfoInputs.cache
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\obj\Debug\net8.0\NotificationApplication.AssemblyInfo.cs
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\obj\Debug\net8.0\NotificationApplication.csproj.CoreCompileInputs.cache
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\obj\Debug\net8.0\Notifica.00F68CC9.Up2Date
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\obj\Debug\net8.0\NotificationApplication.dll
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\obj\Debug\net8.0\refint\NotificationApplication.dll
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\obj\Debug\net8.0\NotificationApplication.pdb
+C:\Users\eliel\source\repos\NotificationSystemApi1\NotificationApplication\obj\Debug\net8.0\ref\NotificationApplication.dll
