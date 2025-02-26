@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationSystemApi1", "NotificationSystemApi1\NotificationSystemApi1.csproj", "{412908B8-D2FD-49DC-B06F-8B013FEC5D56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationDomain", "NotificationDomain\NotificationDomain.csproj", "{876AC981-5428-4038-86CA-3E538D0D2556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationApplication", "NotificationApplication\NotificationApplication.csproj", "{CAA3EB0B-1E1E-4FB4-9A94-BAABA4AC9020}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationInfrastructure", "NotificationInfrastructure\NotificationInfrastructure.csproj", "{0572F037-549A-4555-9E69-3B93FAB100BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationWorker", "NotificationWorker\NotificationWorker.csproj", "{C842D83B-906E-4424-B2F1-A2946DDF62A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{412908B8-D2FD-49DC-B06F-8B013FEC5D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{412908B8-D2FD-49DC-B06F-8B013FEC5D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{412908B8-D2FD-49DC-B06F-8B013FEC5D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{412908B8-D2FD-49DC-B06F-8B013FEC5D56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{876AC981-5428-4038-86CA-3E538D0D2556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{876AC981-5428-4038-86CA-3E538D0D2556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{876AC981-5428-4038-86CA-3E538D0D2556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{876AC981-5428-4038-86CA-3E538D0D2556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA3EB0B-1E1E-4FB4-9A94-BAABA4AC9020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA3EB0B-1E1E-4FB4-9A94-BAABA4AC9020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA3EB0B-1E1E-4FB4-9A94-BAABA4AC9020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA3EB0B-1E1E-4FB4-9A94-BAABA4AC9020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0572F037-549A-4555-9E69-3B93FAB100BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0572F037-549A-4555-9E69-3B93FAB100BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0572F037-549A-4555-9E69-3B93FAB100BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0572F037-549A-4555-9E69-3B93FAB100BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C842D83B-906E-4424-B2F1-A2946DDF62A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C842D83B-906E-4424-B2F1-A2946DDF62A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C842D83B-906E-4424-B2F1-A2946DDF62A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C842D83B-906E-4424-B2F1-A2946DDF62A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60911341-4517-43B7-BC44-FD81C09342B9}
+	EndGlobalSection
+EndGlobal
