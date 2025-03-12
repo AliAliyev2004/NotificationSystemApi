@@ -29,12 +29,10 @@ public class NotificationsControllerTests
     {
         new Notification { Id = 1, Message = "Test", Type = "email" }
     };
-
         
         _mockMediator.Setup(m => m.Send(It.IsAny<GetAllNotificationsQuery>(), It.IsAny<CancellationToken>()))
                      .ReturnsAsync(notifications);  
 
-        
         var result = await _controller.GetAll();
 
         var okResult = result as OkObjectResult;
@@ -57,7 +55,6 @@ public class NotificationsControllerTests
         okResult.StatusCode.Should().Be(200);
         okResult.Value.Should().BeEquivalentTo(notification);
     }
-
     [Fact]
     public async Task Create_ShouldReturnCreatedAtAction_WhenNotificationIsCreated()
     {
@@ -70,7 +67,6 @@ public class NotificationsControllerTests
             IsSent = false,
             CreatedAt = DateTime.UtcNow
         };
-
         _mockMediator.Setup(m => m.Send(It.IsAny<CreateNotificationCommand>(), It.IsAny<CancellationToken>()))
             .ReturnsAsync(createdNotification); 
 
@@ -80,7 +76,6 @@ public class NotificationsControllerTests
         createdResult.StatusCode.Should().Be(201);
         createdResult.Value.Should().BeEquivalentTo("Notification created successfully.");
     }
-
     [Fact]
     public async Task Update_ShouldReturnOkResult_WhenNotificationIsUpdated()
     {
@@ -96,15 +91,12 @@ public class NotificationsControllerTests
         okResult.StatusCode.Should().Be(200);
         okResult.Value.Should().Be("Notification updated successfully.");
     }
-
     [Fact]
     public async Task Delete_ShouldReturnOkResult_WhenNotificationIsDeleted()
     {
         _mockMediator.Setup(m => m.Send(It.IsAny<DeleteNotificationCommand>(), It.IsAny<CancellationToken>()))
             .ReturnsAsync(true);
-
         var result = await _controller.Delete(1);
-
         var okResult = result as OkObjectResult;
         okResult.Should().NotBeNull();
         okResult.StatusCode.Should().Be(200);
