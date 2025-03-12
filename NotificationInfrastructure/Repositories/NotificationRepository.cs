@@ -23,25 +23,28 @@ public class NotificationRepository : INotificationRepository
         return await _context.Notifications.FindAsync(id);
     }
 
-    public async Task AddAsync(Notification notification)
+    public async Task<Notification> AddAsync(Notification notification)
     {
         await _context.Notifications.AddAsync(notification);
         await _context.SaveChangesAsync();
+        return notification; 
     }
 
-    public async Task UpdateAsync(Notification notification)
+
+    public async Task<bool> UpdateAsync(Notification notification)
     {
         _context.Notifications.Update(notification);
-        await _context.SaveChangesAsync();
+        return await _context.SaveChangesAsync()>0;
     }
 
-    public async Task DeleteAsync(int id)
+    public async Task<bool> DeleteAsync(int id)
     {
         var notification = await _context.Notifications.FindAsync(id);
         if (notification != null)
         {
             _context.Notifications.Remove(notification);
-            await _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync() > 0;
         }
+        return false;
     }
 }
