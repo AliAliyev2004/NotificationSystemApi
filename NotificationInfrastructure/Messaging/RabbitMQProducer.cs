@@ -9,7 +9,6 @@ namespace NotificationInfrastructure.Messaging
     {
         private readonly IConnection _connection;
         private readonly string _queueName = "notification_queue";
-
         public RabbitMQProducer()
         {
             var factory = new ConnectionFactory()
@@ -21,7 +20,6 @@ namespace NotificationInfrastructure.Messaging
 
             _connection = factory.CreateConnection();
         }
-
         public void SendNotification(Notification notification)
         {
             using var channel = _connection.CreateModel();

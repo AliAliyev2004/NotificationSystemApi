@@ -14,7 +14,6 @@ public class RedisCacheService
         _cache = cache;
         _logger = logger;
     }
-
     public async Task SetAsync<T>(string key, T value, TimeSpan expiration)
     {
         var options = new DistributedCacheEntryOptions
@@ -25,7 +24,6 @@ public class RedisCacheService
         var jsonData = JsonSerializer.Serialize(value);
         await _cache.SetStringAsync(key, jsonData, options);
     }
-
     public async Task<T?> GetAsync<T>(string key)
     {
         var jsonData = await _cache.GetStringAsync(key);

@@ -30,23 +30,16 @@ public class CreateNotificationCommandHandler : IRequestHandler<CreateNotificati
             IsSent = false,
             CreatedAt = DateTime.UtcNow
         };
-
-        // Bildirişi verilənlər bazasına əlavə et
         var createdNotification = await _notificationRepository.AddAsync(notification);
 
         if (createdNotification != null)
         {
-            // RabbitMQ-ya göndəririk
             _rabbitMQProducer.SendNotification(createdNotification);
-
-            // Redis cache-dən köhnə bildirişləri silirik
             await _cache.RemoveAsync("AllNotifications");
 
-            // Əgər bildiriş müvəffəqiyyətlə yaradılıbsa, onu geri qaytarırıq
             return createdNotification;
         }
 
-        // Bildiriş yaradılmadısa, null qaytarırıq
         return null;
     }
 }

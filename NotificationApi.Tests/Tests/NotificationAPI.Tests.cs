@@ -14,7 +14,6 @@ public class NotificationsControllerTests
     private readonly Mock<IMediator> _mockMediator;
     private readonly Mock<IDatabase> _mockRedis;
     private readonly NotificationsController _controller;
-
     public NotificationsControllerTests()
     {
         _mockMediator = new Mock<IMediator>();
@@ -43,8 +42,6 @@ public class NotificationsControllerTests
         okResult.StatusCode.Should().Be(200);
         okResult.Value.Should().BeEquivalentTo(notifications);
     }
-
-
     [Fact]
     public async Task GetById_ShouldReturnOkResult_WhenNotificationExists()
     {

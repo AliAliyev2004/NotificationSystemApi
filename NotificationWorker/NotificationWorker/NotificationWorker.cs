@@ -45,7 +45,7 @@ namespace NotificationWorker
             };
 
             channel.BasicConsume(queue: "notification_queue",
-                                 autoAck: false, 
+                                 autoAck: false,
                                  consumer: consumer);
 
             await Task.Delay(-1);
@@ -67,7 +67,7 @@ namespace NotificationWorker
                 using var sqlConnection = new SqlConnection(connectionString);
                 await sqlConnection.OpenAsync();
 
-               
+
                 if (notification.Type == "email")
                 {
                     Console.WriteLine("Email gonderildi!");
@@ -94,6 +94,6 @@ namespace NotificationWorker
         }
     }
 
-  
+
 }
 
